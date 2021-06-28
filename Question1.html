@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="Script.js"></script>
+    </head>
+    <body>
+        <form>
+            Participant name:
+            <select name="participant" id="inital">
+                <option value="Mr">Mr</option> 
+                <option value="Miss">Miss</option>
+            </select> &nbsp;&nbsp;&nbsp;
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required><br><br>
+            Email-id:<input type="email" id="email" required><br><br>
+            Confirm email-id:<input type="email" id="confirmEmail" required><br><br>
+            Seminars:<select name="seminars" id="seminars">
+                <option value="SOA">SOA</option>
+                <option value="Design Patterns">Design Patterns</option>
+                <option value="Business Intelligence">Business Intelligence</option>
+            </select><br><br>
+            Level: <input type="radio" name="Level" id="level" value="Indroductory">Indroductory
+             <input type="radio" name="Level" id="level" value="Intermediate">Intermediate
+             <input type="radio" name="Level" id="level" value="Advanced">Advanced<br><br>
+             <input type="button" value="Calculate Training Cost" id="calculateBtn"><br><br>
+             Cost of seminar:<input type="text" id="costText"><br><br>
+             <input type="button" value="Display Details" id="displayDetailsBtn">&nbsp; &nbsp;
+             <input type="submit">
+            
+        </form>
+    </body>    
+</html>
